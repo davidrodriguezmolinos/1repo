@@ -1,0 +1,29 @@
+<html>
+<head>
+    <h1>
+        WEB de DAVID RODRIGUEZ
+        </h1>
+</head>
+<body>
+    <input type="textbox" id="mensage" placeholder="Inserta tu nombre">
+    <input type="button" id="boton" value="Enviar">
+</body>
+</html>
+
+<script>
+document.getElementById("boton").addEventListener("click", function(){
+    var message = document.getElementById("mensage");
+    alert("Hola Mundo!!  " + message.value);
+    count_click_add();
+    });
+    
+    var count_click = 0;
+    
+    function count_click_add() {
+    var count_click = 0;
+    var count_click = count_click +1;
+    alert("has hecho click:  " + count_click);
+    }
+    $("#count_click").text("contador");    
+</script>
+
